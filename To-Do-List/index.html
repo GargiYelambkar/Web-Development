@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">  
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="./notes2.jpeg" alt="To-Do List Logo" class="logo">
+    <h1>To-Do List</h1>
+  </div>
+  <div class="container">
+    <div class="left-section">
+      <div class="wrapper">
+        <div class="task-input">
+          <img src="./menubar.png" alt="icon">
+          <input type="text" placeholder="Add a new task" id="task-name">
+        </div>
+        <div class="task-details">
+          <div class="task-date-picker">
+            <label for="task-date"><i class="uil uil-calendar-alt"></i></label>
+            <input type="date" id="task-date">
+          </div>
+          <select id="task-priority" name="Select priority">
+            <option value="" disabled selected>Select priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+          <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+      </div>
+    </div>
+    <div class="right-section">
+      <img src="./notes1.jpeg" alt="Image" class="side-image">
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
