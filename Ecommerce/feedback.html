@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftedHeaven</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">    
+    <style>
+        /* Inline CSS for feedback form */
+        .feedback-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1em;
+            background: #ffb3d9;
+            border-radius: 20px solid;
+        }
+        header {
+            background-color: #ffff99;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .feedback-form .form-group {
+            margin-bottom: 1em;
+        }
+        .feedback-form label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form textarea {
+            width: calc(100% - 2em);
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #000;
+            border-radius: 4px;
+        }
+        .feedback-form button {
+            padding: 0.7em 1.5em;
+            color: #fff;
+            background-color: #50C878;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="top-bar">
+            <div class="container">
+                <p>Free shipping for all orders of 500/-</p>
+            </div>
+        </div>
+        <div class="nav-wrapper">
+            <div class="container">
+                <h1 class="h1">
+                    <a href="./index.html" class="logo">Crafted<span class="span">Heaven</span></a>
+                </h1>
+                <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <nav class="navbar" data-navbar>
+                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                    <ul class="navbar-list">
+                        <li><a href="./index.html" class="navbar-link">Home</a></li>
+                        <li><a href="./about.html" class="navbar-link">About</a></li>
+                        <li><a href="./shop.html" class="navbar-link">Shop</a></li>
+                        <li><a href="./feedback.html" class="navbar-link">Feedbacks</a></li>
+                        <li><a href="./contact.html" class="navbar-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-action">
+                    <div class="search-wrapper" data-search-wrapper>
+                        <button class="header-action-btn" aria-label="Toggle search" data-search-btn>
+                            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+                        </button>
+                        <div class="input-wrapper">
+                            <input type="search" name="search" placeholder="Search here" class="search-input">
+                            <button class="search-submit" aria-label="Submit search">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="header-action-btn" aria-label="Open wishlist" data-panel-btn="wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <data class="btn-badge" value="3">03</data>
+                    </button>
+                    <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
+                        <ion-icon name="basket-outline"></ion-icon>
+                        <data class="btn-badge" value="2">02</data>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="h2 section-title">Feedback From Happy Clients</h2>
+            <ul class="has-scrollbar">
+                <li class="testi-item">
+                    <div class="testi-card">
+                        <div class="card-header">
+                            <img src="./assets/images/quote-left.png" width="25" height="25" aria-hidden="true" alt="">
+                            <img src="./assets/images/person1.png" width="90" height="90" loading="lazy" alt="person1" class="card-avatar">
+                            <img src="./assets/images/quote-right.png" width="25" height="25" aria-hidden="true" alt="">
+                        </div>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <blockquote class="card-text">
+                            "I had a wonderful experience from start to finish. Will be back for more!"
+                        </blockquote>
+                        <h3 class="card-title">Sasha</h3>
+                        <p class="card-subtitle">Handicrafts Lover</p>
+                    </div>
+                </li>
+                <li class="testi-item">
+                    <div class="testi-card">
+                        <div class="card-header">
+                            <img src="./assets/images/quote-left.png" width="25" height="25" aria-hidden="true" alt="">
+                            <img src="./assets/images/person2.jpeg" width="90" height="90" loading="lazy" alt="person2" class="card-avatar">
+                            <img src="./assets/images/quote-right.png" width="25" height="25" aria-hidden="true" alt="">
+                        </div>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <blockquote class="card-text">
+                            "The craftsmanship is excellent! You can tell a lot of care went into making this piece."
+                        </blockquote>
+                        <h3 class="card-title">Harry</h3>
+                        <p class="card-subtitle">Web Developer</p>
+                    </div>
+                </li>
+                <li class="testi-item">
+                    <div class="testi-card">
+                        <div class="card-header">
+                            <img src="./assets/images/quote-left.png" width="25" height="25" aria-hidden="true" alt="">
+                            <img src="./assets/images/person3.png" width="90" height="90" loading="lazy" alt="person3" class="card-avatar">
+                            <img src="./assets/images/quote-right.png" width="25" height="25" aria-hidden="true" alt="">
+                        </div>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <blockquote class="card-text">
+                            "Such a unique and creative piece! It stands out and gets lots of compliments."
+                        </blockquote>
+                        <h3 class="card-title">Reesha</h3>
+                        <p class="card-subtitle">Software Developer</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-form-container">
+        <form action="" method="POST" class="feedback-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <p class="section-subtitle"> -- Subscribe Newsletter --</p>
+                <h2 class="h2 section-title">Sign Up To Newsletter & Get <span class="span">20% Off.</span></h2>
+                <form action="" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required class="input-email">
+                    <button type="submit" class="btn btn-primary">
+                        <span>Sign Up</span>
+                        <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="./index.html" class="logo">Crafted<span class="span">Heaven</span></a>
+                    <p class="footer-text">Our mission is to bring you exceptional quality and personalized designs that you won't find anywhere else.</p>
+                    <ul class="social-list">
+                        <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" class="social-link"><ion-icon name="logo-skype"></ion-icon></a></li>
+                        <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Company</p></li>
+                    <li><a href="./about.html" class="footer-link">About Us</a></li>
+                    <li><a href="./shop.html" class="footer-link">Shop</a></li>
+                    <li><a href="./feedback.html" class="footer-link">Feedbacks</a></li>
+                    <li><a href="./shop.html" class="footer-link">Product</a></li>
+                    <li><a href="./contact.html" class="footer-link">Contact Us</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Contact</p></li>
+                    <li class="footer-item">
+                        <div class="contact-icon"><ion-icon name="location-outline"></ion-icon></div>
+                        <address class="contact-link">12 Chilley Tower, CraftsWorld 74638, Mumbai</address>
+                    </li>
+                    <li class="footer-item">
+                        <div class="contact-icon"><ion-icon name="call-outline"></ion-icon></div>
+                        <a href="tel:+917820805887" class="contact-link">+91 7820805887 </a>
+                    </li>
+                    <li class="footer-item">
+                        <div class="contact-icon"><ion-icon name="mail-outline"></ion-icon></div>
+                        <a href="mailto:organica@help.com" class="contact-link">craftedheaven@help.com</a>
+                    </li>
+                </ul>
+                <div class="footer-list">
+                    <p class="footer-list-title">Newsletter</p>
+                    <p class="newsletter-text">You will be notified when something new appears.</p>
+                    <form action="" class="footer-form">
+                        <input type="email" name="email" placeholder="Email Address *" required class="footer-input">
+                        <button type="submit" class="footer-form-btn" aria-label="Submit">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2024 <a href="#" class="copyright-link">codewithme</a>. All Rights Reserved.</p>
+                <ul class="footer-bottom-list">
+                    <li><a href="#" class="footer-bottom-link">Term and Service</a></li>
+                    <li><a href="#" class="footer-bottom-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#top" class="back-to-top" aria-label="Back to Top" data-back-top-btn><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+    <!-- Custom JS link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Ionicons link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
